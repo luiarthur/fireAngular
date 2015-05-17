@@ -1,6 +1,6 @@
 angular.module("firetube",["firebase"]).controller(
   "Firetube",["$scope","$firebase",function($scope,$firebase){
-    var ref = new Firebase("https://luiarthur-comments.firebaseio.com/comments");
+    var ref = new Firebase("https://luifireapp.firebaseio.com/comments/");
     $scope.comments = $firebase(ref);
     $scope.username = 'Guest' + Math.floor(Math.random() * 101);
     $scope.addComment = function(e) {
